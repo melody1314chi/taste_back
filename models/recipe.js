@@ -34,6 +34,10 @@ const schema = new Schema({
   tips: {
     type: String,
   },
+  publish: {
+    type: Boolean,
+    required: [true, 'recipePublishRequired'],
+  },
 })
 
 export default model('recipes', schema)

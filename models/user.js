@@ -59,6 +59,10 @@ const schema = new Schema(
     cart: {
       type: [cartSchema],
     },
+    favorite: {
+      type: Boolean,
+      default: 0,
+    },
   },
   {
     versionKey: false,
